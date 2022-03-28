@@ -1,6 +1,11 @@
 package test;
 
+import org.junit.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
@@ -13,10 +18,8 @@ import org.junit.jupiter.api.Test;
 
 import com.sun.net.httpserver.HttpServer;
 
-import junit.framework.Assert;
 import main.EchoGetHandler;
 
-@SuppressWarnings("deprecation")
 public class TestMain {
 	
 	@Test
